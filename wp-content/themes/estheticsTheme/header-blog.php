@@ -64,33 +64,5 @@
         <!-- END nav -->
         
 
-        <?php 
-        
-            $destacada = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full');
-            //$destacada = wp_get_attachment_image_src(get_field('imagen_hero'), 'full');  
-            $destacada = $destacada[0];
 
-            if(!isset($destacada)){
-                $destacada = get_stylesheet_directory_uri().'/img/bg_2.jpg';
-            }
-
-            
-            
-            
-            
-
-        ?>
-
-
-        <section class="hero-wrap hero-wrap-2" style="background-image: url('<?php echo esc_attr($destacada);  ?>');" data-stellar-background-ratio="0.5">
-          <div class="overlay"></div>
-          <div class="container">
-            <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
-              <div class="col-md-9 text-center">
-                <h1 class="mb-3 bread"><?php  the_title()   ?></h1>
-                <p class="breadcrumbs"><span class="mr-2"><a href="#">Home</a></span> <span><?php  the_title()   ?></span></p>
-              </div>
-            </div>
-          </div>
-        </section>
 
