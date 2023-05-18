@@ -10022,3 +10022,36 @@ figure.aligncenter {
         color: #d9bf77 !important;
 
     }
+
+    /*Blog*/
+
+    /* Paginador **/
+
+    .pager{
+      display: flex;
+      justify-content: center;
+    }
+
+    .pager .page-numbers{
+
+        margin: 5px;
+        color: #d9bf77;
+        text-align: center;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 50%;
+        border: 1px solid #e6e6e6;
+    }
+
+    a.prev.page-numbers, a.next.page-numbers{
+      width: auto;
+      border: none;
+    }
+
+    span.page-numbers.current {
+      background: #d9bf77;
+      color: #fff;
+      border: 1px solid transparent;
+    }

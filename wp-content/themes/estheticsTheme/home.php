@@ -1,7 +1,7 @@
 <?php get_header('blog') ?>
 
 
-
+<!-- Imagen hero -->
 
 <?php 
         
@@ -34,7 +34,7 @@
       </div>
     </section>
 
-
+<!--Seccion principal del blog -->
 <section class="ftco-section bg-light">
         <div class="container">
             <div class="row d-flex">
@@ -46,6 +46,13 @@
 
                     
                     <?php endwhile; ?>
+
+                    <div class="pager">
+                   
+                        <?php  echo  paginate_links()  ?>
+
+                    </div>
+
 
                 <?php endif; ?>
                 <!-- SE DETIENE EL LOOP -->
