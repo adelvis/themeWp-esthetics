@@ -32,7 +32,12 @@
                             <p><?php the_author_description() ?></p>
                         </div>
                     </div>
-                            
+
+                    
+                    <!--Comentarios  -->
+                    <div class="comment-form-wrap pt-5">
+                        <?php comments_template();  ?>
+                    </div>         
                
                 <?php endwhile; ?> 
 
